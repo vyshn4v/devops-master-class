@@ -8,17 +8,17 @@ spec:
   rules:
   - http:
       paths:
-      - path: /currency-exchange/
+      - path: /currency-exchange
         pathType: Prefix
         backend:
           service:
            name: currency-exchange
            port:
-              number: 8000     
-      - path:  /currency-conversion/
+            number: 8000     
+      - path:  /currency-conversion
         pathType: Prefix
         backend:
           service: 
            name: currency-conversion
            port:
-              number: 8100 
+            number: 8100 
